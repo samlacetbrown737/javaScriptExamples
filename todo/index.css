@@ -1,0 +1,89 @@
+body {
+	background-color: #bde8ff;
+}
+
+#title {
+	position: relative;
+	left: calc(50% - 30px);
+	font-size: 24px
+}
+
+#container {
+	border: 2px solid blue;
+	border-radius: 5px;
+	width: 300px;
+	position: absolute;
+	left: calc(50% - 150px);
+	padding: 15px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li:hover {
+	background-color: #90e5fc;
+}
+
+li {
+	margin-bottom: 2px;
+	background-color: #b0eeff;
+	border-color: #b0eeff;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#adder {
+	background-color: #bde8ff;
+	padding: 0px;
+}
+
+#completed {
+	background-color: #bde8ff;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+#completed li {
+	margin-bottom: 2px;
+	text-decoration: line-through;
+	background-color: #c0c8cc;
+	border-color: #c0c8cc;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.list p {
+	display: block;
+	color: #FFF;
+	background-color: #036;
+	width: 20px;
+	padding: 4px 16px;
+}
+
+#newItem {
+	width: 279px;
+	height: 20px;
+}
+
+#newItem:focus {
+	outline: none;
+}
+
+#addButton {
+	background-color: #bde8ff;
+	border-color: #bde8ff;
+	color: grey;
+	font-size: 24px;
+	padding: 0px;
+}
+
+#addButton:hover {
+	color: black;
+}
+
+#addButton:focus {
+	outline: none;
+}

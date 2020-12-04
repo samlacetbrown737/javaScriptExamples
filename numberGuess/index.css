@@ -1,0 +1,30 @@
+button {
+	color: #fa5c5c;
+	background-color: #bf0202;
+	border: solid 2px #bf0202;
+	border-radius: 5px;
+	margin: 2px;
+	font-size: 20px;
+	padding: 5px;
+	width: 80px;
+	height: 45px;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:active {
+	color: #bf0202;
+	background-color: #fa5c5c;
+	border: solid 2px #fa5c5c;
+}
+
+button:hover {
+	color: #ffa8a8;
+}
+
+.no {
+	color: black;
+	background-color: grey;
+}

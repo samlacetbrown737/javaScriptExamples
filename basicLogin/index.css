@@ -1,0 +1,75 @@
+body {
+	background-color: #090bad;
+}
+
+input {
+	width:150px;
+	display: block;
+	left: 300px;
+	padding: 5px;
+	margin: 5px;
+	background-color: #c4f3ff;
+	color: #090bad;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+
+}
+
+input:focus {
+	outline: lightblue auto 3px;
+}
+
+#welcomeMessage {
+	display: none;
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	left: 50%;
+	top: 50%;
+	margin: -70px 0 0 -170px;
+	color: white;
+	font: 40px "Trebuchet MS", Helvetica, sans-serif;
+	font-variant: small-caps;
+}
+
+#form {
+	width:100%;
+	margin: 0 auto;
+	position: absolute;
+	left: calc(100% - 185px);
+	left: -webkit-calc(100% - 185px);
+	left: -moz-calc(100% - 185px);
+}
+
+#loginButton {
+	width: 70px;
+	font-size: 20px;
+	position: relative;
+	left: 90px;
+	margin: 10px;
+	display:inline-block;
+	padding: 5px;
+	border: 2px solid #1eb5e3;
+	background-color:#FFFFFF;
+	border-radius: 3px;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:300;
+	color: #1eb5e3;
+	text-align:center;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+#loginButton:hover {
+	color: #FFFFFF;
+	background-color: #1eb5e3;
+	border: 2px solid #FFFFFF;
+}
+
+#loginButton:focus {
+	outline: none;
+}

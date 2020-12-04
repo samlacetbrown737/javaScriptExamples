@@ -1,0 +1,19 @@
+<head>
+	<title>
+		To-Do List
+	</title>
+	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+<body onload="setup()">
+	<div id="container">
+		<p id="title">To-Do</p>
+		<ul id="items">
+			<li id="adder">
+				<input type="text" id="newItem" placeholder="What's next?">
+				<input type="button" id="addButton" value="+" onclick="addItem()">
+			</li>
+			<li id="completed">
+			</li>
+		</ul>
+	</div>
+</body>

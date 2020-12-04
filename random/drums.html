@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+	<title>Drum Machine</title>
+	<script type="text/javascript" src="http://livejs.com/live.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="/drumMachine/drum.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="/drumMachine/drums.css">
+</head>
+<body>
+	<a id="back" href="../" class="hvr-icon-back"> <i class="fa fa-chevron-circle-left hvr-icon"></i> Back</a>
+	<div class="container">
+	    <div class="more">
+	        <button id="more-btn" class="more-btn">
+	            <span class="more-dot"></span>
+	            <span class="more-dot"></span>
+	            <span class="more-dot"></span>
+	        </button>
+	        <div class="more-menu">
+	            <div class="more-menu-caret">
+	                <div class="more-menu-caret-outer"></div>
+	                <div class="more-menu-caret-inner"></div>
+	            </div>
+	            <ul class="more-menu-items" tabindex="-1" role="menu" aria-labelledby="more-btn" aria-hidden="true">
+	            	<li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">The default speed is 5, higher numbers are slower</button>
+	               </li>
+	                <li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">Click on a button or press the corresponding key to start an audio loop.</button>
+	                </li>
+	              <li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">Sounds: </button>
+	               </li>
+	               <li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">A - Clap</button>
+	               </li>
+	              <li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">S - Hi-hat</button>
+	               </li>
+	              <li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">D - Kick Drum</button>
+	               </li>
+	              <li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">F - Open Hi-hat</button>
+	               </li>
+	              <li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">G - Muffled Drum</button>
+	               </li>
+	              <li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">H - Ride Cymbal</button>
+	               </li>
+	              <li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">J - Snare Drum</button>
+	               </li>
+	              <li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">K - Floor Tom</button>
+	               </li><li class="more-menu-item" role="presentation">
+	                    <button type="button" class="more-menu-btn" role="menuitem">L - Metronome</button>
+	               </li>
+	               
+	            </ul>
+	        </div>
+	    </div>
+	</div>
+	<div id="buttons">
+		<input id="a" type="button" class="button" value="A" onclick="toggleClap()">
+		<input id="s" type="button" class="button" value="S" onclick="toggleHihat()">
+		<input id="d" type="button" class="button" value="D" onclick="toggleKick()">
+		<input id="f" type="button" class="button" value="F" onclick="toggleOpenhat()">
+		<input id="g" type="button" class="button" value="G" onclick="toggleBoom()">
+		<input id="h" type="button" class="button" value="H" onclick="toggleRide()">
+		<input id="j" type="button" class="button" value="J" onclick="toggleSnare()">
+		<input id="k" type="button" class="button" value="K" onclick="toggleTom()">
+		<input id="l" type="button" class="button" value="L" onclick="toggleTink()">
+	</div>
+	<input id="bpm" type="button" class="button" value="Set Speed">
+</body>

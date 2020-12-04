@@ -1,0 +1,256 @@
+body {
+	background: darkblue;
+}
+
+.clock-face {
+	position: relative;
+	margin-top: 2.5%;
+	margin-left: 50%;
+	transform: translate(-50%, 0%);
+	width: 45%;
+	border: 5px solid black;
+	border-radius: 50%;
+	background: white;
+}
+
+.clock-face:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.digital {
+	position: absolute;
+	margin-left: 5%;
+	top: 75%;
+	background: black;
+	border: 1px solid white;
+	height: 15%;
+	width: 20%;
+}
+
+.hand {
+	transform-origin: 0% 0%;
+	transition: all 1s linear;
+	background: black;
+    text-align: center;
+    font: normal 1em Arial;
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 50%;
+    z-index: 1;
+}
+
+.second-hand {
+	width: 5px;
+	height: 350px;
+	background: red;
+}
+
+.minute-hand {
+	width: 15px;
+	height: 300px;
+	left: 5px;
+}
+
+.hour-hand {
+	width: 15px;
+	height: 200px;
+	left: -5px;
+}
+
+#time {
+	color: red;
+	margin-top: 12%;
+	margin-left: 31%;
+	font-style: monospace;
+	font-size: 36px;
+}
+
+.number {
+	color: black;
+	font-size: 72px;
+	font: serif;
+	position: absolute;
+}
+
+.snumber {
+	color: red;
+	font-size: 24px;
+	font: serif;
+	position: absolute;
+}
+
+.center {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: 2px solid black;
+	background: black;
+	border-radius: 50px;
+	top: 348px;
+	left: 348px;
+	z-index: 2;
+}
+
+/* big numbers */
+	#one {
+		top: 0px;
+		left: 540px;
+	}
+
+	#two {
+		top: 100px;
+		left: 640px;
+	}
+
+	#three {
+		top: 260px;
+		left: 680px;
+	}
+
+	#four {
+		top: 420px;
+		left: 640px;
+	}
+
+	#five {
+		top: 540px;
+		left: 520px;
+	}
+
+	#six {
+		top: 580px;
+		left: 355px;
+	}
+
+	#seven {
+		top: 540px;
+		left: 190px;
+	}
+
+	#eight {
+		top: 420px;
+		left: 80px;
+	}
+
+	#nine {
+		top: 260px;
+		left: 40px;
+	}
+
+	#ten {
+		top: 110px;
+		left: 60px;
+	}
+
+	#eleven {
+		top: 0px;
+		left: 175px;
+	}
+
+	#twelve {
+		top: -55px;
+		left: 335px;
+	}
+
+/* small numbers */
+	#sone {
+		top: 120px;
+		left: 520px;
+	}
+
+	#stwo {
+		top: 200px;
+		left: 600px;
+	}
+
+	#sthree {
+		top: 335px;
+		left: 640px;
+	}
+
+	#sfour {
+		top: 470px;
+		left: 600px;
+	}
+
+	#sfive {
+		top: 560px;
+		left: 500px;
+	}
+
+	#ssix {
+		top: 600px;
+		left: 360px;
+	}
+
+	#sseven {
+		top: 560px;
+		left: 240px;
+	}
+
+	#seight {
+		top: 470px;
+		left: 140px;
+	}
+
+	#snine {
+		top: 335px;
+		left: 100px;
+	}
+
+	#sten {
+		top: 220px;
+		left: 140px;
+	}
+
+	#seleven {
+		top: 140px;
+		left: 240px;
+	}
+
+	#stwelve {
+		top: 100px;
+		left: 360px;
+	}
+
+.hvr-icon-back {
+	position: absolute;
+	left: 50px;
+	top: 20px;
+	font-size: 40px;
+	color: white;
+	text-decoration: none;
+  	display: inline-block;
+  	vertical-align: middle;
+  	-webkit-transform: perspective(1px) translateZ(0);
+  	transform: perspective(1px) translateZ(0);
+  	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  	-webkit-transition-duration: 0.1s;
+  	transition-duration: 0.1s;
+  	transition: text-shadow none;
+}
+.hvr-icon-back .hvr-icon {
+ 	-webkit-transform: translateZ(0);
+  	transform: translateZ(0);
+  	-webkit-transition-duration: 0.1s;
+  	transition-duration: 0.1s;
+  	-webkit-transition-property: transform;
+  	transition-property: transform;
+  	-webkit-transition-timing-function: ease-out;
+  	transition-timing-function: ease-out;
+  	transition: text-shadow none;
+}
+
+.hvr-icon-back:hover {
+	color: white;
+	cursor: w-resize;
+	text-shadow: -3px 3px 1px rgba(0,0,0,1);
+}
+.hvr-icon-back:hover .hvr-icon, .hvr-icon-back:focus .hvr-icon, .hvr-icon-back:active .hvr-icon {
+  	color: #f2f6fc;
+  	cursor: w-resize;
+  	-webkit-transform: translateX(-4px);
+  	transform: translateX(-4px);
+}
